@@ -71,6 +71,14 @@ function calculateBirthday(){
     alert(firstSecondValues)
 
 
+    // getting the third and fourth values from the years input.
+    var thirdFourthValues = output[2].toString() + output[3].toString()
+    var year = parseInt(thirdFourthValues)
+    alert(thirdFourthValues)
+
+    var dayOfTheWeek = (days + [(13* month - 1)/5] + year + [year/4] + [centuary/4] - 2*centuary) % 7;
+
+    alert(dayOfTheWeek);
 
 }
 
