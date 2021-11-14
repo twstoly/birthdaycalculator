@@ -36,7 +36,49 @@ function calculateBirthday(){
     }else{
         alert("You are out of range")
     }
+
+    var month = mewMonthsValue;
+    alert(month);
+
+    var year = document.getElementById('year').value;
+
+    // Checking for the validity of the items entered..
+    if(days <= 0 || days >31){
+        alert("You have entered an Invalid Day.")
+        document.getElementById("dateFeedback").innerHTML = "You have entered an Invalid Day";
+    }; 
+    if(months <= 0 || months > 12 ){
+        alert("You are out of range. there is no space for anothre month innovation or discovery?");
+        document.getElementById("monthFeedback").innerHTML = "You are out of range. there is no space for another month innovation or discovery?";
+    }; 
+
+    if(year <= 1000 || year > 2021 ){
+        alert("You are out of range.");
+        document.getElementById("yearFeedback").innerHTML = "..";
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
