@@ -56,6 +56,18 @@ function calculateBirthday(){
         alert("You are out of range.");
         document.getElementById("yearFeedback").innerHTML = "..";
     }
+    
+    //Get years value from the calendar changing it to an array then slicing the first two values for centuary and the last two for year.
+    output = [];
+    sumYears = year.toString();
+
+    for(var i = 0, length = sumYears.length; i< length; i++){
+        output.push(+sumYears.charAt(i));
+    }
+    // getting the first two values from the years input.
+    var firstSecondValues = output[0].toString() + output[1].toString();
+    var centuary = parseInt(firstSecondValues)
+
 }
 
 
