@@ -1,0 +1,101 @@
+
+nav a{
+    color: black;
+}
+a:hover{
+    color: red;
+}
+
+/* navbar styling */
+.navigation{
+    position: relative;
+    padding: 0 60px;
+    height: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-style: italic;
+    text-decoration: none;
+    background-attachment: fixed;
+    
+}
+.background{
+    background: url(/images/jason-goodman-MUZFKa_mttU-unsplash.jpg) center;
+    background-size: cover;
+    min-height: 500px;
+    padding: 40px;
+    text-align: center;
+}
+.container ul li a{
+    color: black;
+}
+.description{
+    position: relative;
+    top: 120px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    opacity: .5;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 3px 1px 3px black;
+}
+.input-header{
+    background-size: cover;
+}
+.container .description h2, .description p{
+    opacity: 1;
+    color: white;
+}
+.form-header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 50px ;
+    margin: 0;
+}
+.learn{
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+.birthday-wishes{
+    background-color: black;
+    color: rgb(151, 151, 151);
+}
+.birthday-wishes h2{
+    color: white;
+}
+.fundamentals{
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px){
+
+    .description{
+        position: relative;
+        top: 0;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 20px;
+    }
+    
+    .learn{
+        border: none;
+        border-radius: 0;
+    }
+    .video{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

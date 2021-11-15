@@ -76,41 +76,12 @@ function calculateBirthday(){
     var year = parseInt(thirdFourthValues)
     alert(thirdFourthValues)
 
-    var dayOfTheWeek = (days + [(13* month - 1)/5] + year + [year/4] + [centuary/4] - 2*centuary) % 7;
+    var dayOfTheWeek = (days + [(13* month - 1)/5] + year + [year/4] + [centuary/4] - 2*centuary);
 
     alert(dayOfTheWeek);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById("akanName").innerHTML = "Your akan name is: " ;
 
 
 
