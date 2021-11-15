@@ -52,7 +52,7 @@ function calculateBirthday(){
     }else if(months == 12){
         newMonthsValue = 12
     }else{
-        alert("You are out of range")
+        // alert("You are out of range")
     }
 
     var month = parseInt(mewMonthsValue);
@@ -83,7 +83,7 @@ function calculateBirthday(){
     
     daysOfWeek = specificDay - 1;
 
-    alert(daysOfWeek);
+    // alert(daysOfWeek);
 
     numberDays = ["Sunday","Monday","Tuesday","Wednesday","thursday","friday","saturday",];
 
@@ -93,7 +93,6 @@ function calculateBirthday(){
 
     if(isChecked = true) {
         //validationFormCheck2 is checked
-        alert("hey you.")
 
         
         if(daysOfWeek == 0){
@@ -115,7 +114,6 @@ function calculateBirthday(){
     }
     else{
         //validationFormCheck3 is checked
-        alert("Buuddy you.")
         
         if(daysOfWeek == 0){
             document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[0];
@@ -136,85 +134,6 @@ function calculateBirthday(){
     }
 
 }
-
-
-
-// numberDays = new MakeArray(7);
-// days[0] = "Saturday"
-// days[1] = "Sunday"
-// days[2] = "Monday"
-// days[3] = "Tuesday"
-// days[4] = "Wednesday"
-// days[5] = "Thursday"
-// days[6] = "Friday"
-
-// numberDays = ["Sunday","Monday","Tuesday","Wednesday","thursday","friday","saturday",]
-
-// alert(numberDays[4])
-
-
-// maleRadio = new maleNames(7);
-// male[0] = "Kwasi"
-// male[1] = "Kwadwo"
-// male[2] = "Kwabena"
-// male[3] = "Kwaku"
-// male[4] = "Yaw"
-// male[5] = "Kofi"
-// male[6] = "Kwame"
-
-// femaleRadio = new maleNames(7);
-// female[0] = "Akosua"
-// female[1] = "Adwoa"
-// female[2] = "Abenaa"
-// femae[3] = "Akua"
-// female[4] = "Yaa"
-// female[5] = "Afua"
-// female[6] = "Ama"
-
-
-// if(daysOfWeek == 0 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[0];
-// }else if(daysOfWeek == 1 || daysOfWeek == -1 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[2];
-// }else if(daysOfWeek == 2 || daysOfWeek == -2 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[3];
-// }else if(daysOfWeek == 3 || daysOfWeek == -3 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[4];
-// }else if(daysOfWeek == 4 || daysOfWeek == -4 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[5];
-// }else if(daysOfWeek == 5 || daysOfWeek == -5 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[6];
-// }else if(daysOfWeek == 6 || daysOfWeek == -6 && isChecked == true){
-//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[7];
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById("akanName").innerHTML = "Your akan name is: " ;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
