@@ -62,36 +62,40 @@
 
             <div class="container">
                 <div class="row  align-items-center justify-content-between">
-                    <div class="col-md p-5"> 
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-                            <label class="form-check-label" for="validationFormCheck2">Male</label>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
-                            <label class="form-check-label" for="validationFormCheck3">Female</label>
-                            <div class="invalid-feedback">More example invalid feedback text</div>
-                        </div>
-                        <label for="">Date of Birth</label>
-                        <input type="text" id="day" class="form-control" maxlength="2" placeholder="Enter date @example 27" aria-label="Date of birth">
-                        <p id="dateFeedback"></p>
+                    <div class="col-md p-5">
+                        <form action="">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"  id="male" name="radio-stacked" required>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="radio" class="form-check-input"  id="female" name="radio-stacked" required>
+                                <label class="form-check-label" for="female">Female</label>
+                                <div class="invalid-feedback">More example invalid feedback text</div>
+                            </div>
+                            <label for="">Date of Birth</label>
+                            <input type="text" id="day" class="form-control" maxlength="2" placeholder="Enter date @example 27" aria-label="Date of birth">
+                            <p id="dateFeedback"></p>
 
 
-                        <label for="">Month of Birth</label>
-                        <input type="text" id="month" class="form-control" maxlength="2" placeholder="Enter Month @example 12" >
-                        <p id="monthFeedback"></p>
+                            <label for="">Month of Birth</label>
+                            <input type="text" id="month" class="form-control" maxlength="2" placeholder="Enter Month @example 12" >
+                            <p id="monthFeedback"></p>
 
 
-                        <label for="">Year of Birth</label>
-                        <input type="text" id="month" class="form-control" maxlength="2" placeholder="Enter Year @example 1950" >
-                        <p id="monthFeedback"></p>
+                            <label for="">Year of Birth</label>
+                            <input type="text" id="year" class="form-control" maxlength="4" placeholder="Enter Year @example 1950" >
+                            <p id="monthFeedback"></p>
 
-
-                        <button class="btn btn-dark" onclick="calculateBirthday()" type="submit">Calculate..</button>
+                            <button class="btn btn-dark" onclick="calculateBirthday()" type="submit">Calculate..</button>
+                    
+                            <h4 id="paragraph" class="pt-2"></h4>
+                        </form>
+                        
                     </div>
 
                     <div class="col-md video">
-                        <video src="../Videos/lot.mp4" width="100%"  loop autoplay="true"></video>
+                        <video src="./Videos/lot.mp4" width="100%"  loop autoplay="true"></video>
                     </div>
                 </div>
             </div>
@@ -148,7 +152,7 @@
             <div class="container learn mb-5">
                 <div class="row  align-items-center justify-content-between">
                     <div class="col-md">
-                        <video src="../Videos/meditation.mp4" width="100%"  loop autoplay="true"></video>
+                        <video src="./Videos/meditation.mp4" width="100%"  loop autoplay="true"></video>
                     </div>
                     <div class="col-md"> 
                         <h2>Learn the Fundamentals</h2>
@@ -181,7 +185,7 @@
                         <a href="#" class="btn btn-light mt-3">Continue</a>
                     </div>
                     <div class="col-md video">
-                        <video src="../Videos/38315-speech-therapy.mp4" width="100%" loop autoplay="true"></video>
+                        <video src="./Videos/38315-speech-therapy.mp4" width="100%" loop autoplay="true"></video>
                     </div>
                 </div>
             </div>
