@@ -1,10 +1,12 @@
 
+
+var isChecked = document.getElementById("validationFormCheck2").checked == false;
+
 function calculateBirthday(){
 
     //Get months days from the calendar
     var days = document.getElementById("day").value;
     var day  = parseInt(days)
-    alert(day)
 
 
     // Checking for the validity of the items entered..
@@ -19,7 +21,7 @@ function calculateBirthday(){
 
     if(year <= 1000 || year > 2021 ){
         alert("You are out of range.");
-        document.getElementById("yearFeedback").innerHTML = "..";
+        document.getElementById("yearFeedback").innerHTML = "Are you sure of your age buddy?";
     }
 
     //Get months value from the calendar
@@ -54,7 +56,6 @@ function calculateBirthday(){
     }
 
     var month = parseInt(mewMonthsValue);
-    alert(month);
 
     var year = document.getElementById('year').value;
 
@@ -67,28 +68,156 @@ function calculateBirthday(){
     for(var i = 0, length = sumYears.length; i< length; i++){
         output.push(+sumYears.charAt(i));
     }
+
     // getting the first two values from the years input.
     var firstSecondValues = output[0].toString() + output[1].toString();
     var centuary = parseInt(firstSecondValues)
-    // alert(centuary)
-
 
     // getting the third and fourth values from the years input.
     var thirdFourthValues = output[2].toString() + output[3].toString()
     var years = parseInt(thirdFourthValues)
-    // alert(thirdFourthValues)
 
     var totalMonths = (month + 1)
 
-    var specificDay = (day + Math.floor((13 * totalMonths )/5) + years + Math.floor(years/4) + Math.floor(centuary/4) - 2*centuary) % 7;
+     specificDay = (day + Math.floor((13 * totalMonths )/5) + years + Math.floor(years/4) + Math.floor(centuary/4) - 2*centuary) % 7;
+    
+    daysOfWeek = specificDay - 1;
 
+    alert(daysOfWeek);
 
-    alert(specificDay);
+    numberDays = ["Sunday","Monday","Tuesday","Wednesday","thursday","friday","saturday",];
+
+    maleRadio = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame",];
+
+    femaleRadio = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama",];
+
+    if(isChecked = true) {
+        //validationFormCheck2 is checked
+        alert("hey you.")
+
+        
+        if(daysOfWeek == 0){
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[0];
+        }else if(daysOfWeek == 1 || daysOfWeek == -6){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[1];
+        }else if(daysOfWeek == 2 || daysOfWeek == -5){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[2];
+        }else if(daysOfWeek == 3 || daysOfWeek == -4){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[3];
+        }else if(daysOfWeek == 4 || daysOfWeek == -3){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[4];
+        }else if(daysOfWeek == 5 || daysOfWeek == -2){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[5];
+        }else if(daysOfWeek == 6 || daysOfWeek == -1){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + maleRadio[6];
+        }
+    
+    }
+    else{
+        //validationFormCheck3 is checked
+        alert("Buuddy you.")
+        
+        if(daysOfWeek == 0){
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[0];
+        }else if(daysOfWeek == 1 || daysOfWeek == -6){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[1];
+        }else if(daysOfWeek == 2 || daysOfWeek == -5){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[2];
+        }else if(daysOfWeek == 3 || daysOfWeek == -4){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[3];
+        }else if(daysOfWeek == 4 || daysOfWeek == -3){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[4];
+        }else if(daysOfWeek == 5 || daysOfWeek == -2){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[5];
+        }else if(daysOfWeek == 6 || daysOfWeek == -1){        
+            document.getElementById("paragraph").innerHTML = "Your Akan name is " + femaleRadio[6];
+        }
+        
+    }
+
 }
 
 
 
+// numberDays = new MakeArray(7);
+// days[0] = "Saturday"
+// days[1] = "Sunday"
+// days[2] = "Monday"
+// days[3] = "Tuesday"
+// days[4] = "Wednesday"
+// days[5] = "Thursday"
+// days[6] = "Friday"
+
+// numberDays = ["Sunday","Monday","Tuesday","Wednesday","thursday","friday","saturday",]
+
+// alert(numberDays[4])
+
+
+// maleRadio = new maleNames(7);
+// male[0] = "Kwasi"
+// male[1] = "Kwadwo"
+// male[2] = "Kwabena"
+// male[3] = "Kwaku"
+// male[4] = "Yaw"
+// male[5] = "Kofi"
+// male[6] = "Kwame"
+
+// femaleRadio = new maleNames(7);
+// female[0] = "Akosua"
+// female[1] = "Adwoa"
+// female[2] = "Abenaa"
+// femae[3] = "Akua"
+// female[4] = "Yaa"
+// female[5] = "Afua"
+// female[6] = "Ama"
+
+
+// if(daysOfWeek == 0 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[0];
+// }else if(daysOfWeek == 1 || daysOfWeek == -1 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[2];
+// }else if(daysOfWeek == 2 || daysOfWeek == -2 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[3];
+// }else if(daysOfWeek == 3 || daysOfWeek == -3 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[4];
+// }else if(daysOfWeek == 4 || daysOfWeek == -4 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[5];
+// }else if(daysOfWeek == 5 || daysOfWeek == -5 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[6];
+// }else if(daysOfWeek == 6 || daysOfWeek == -6 && isChecked == true){
+//     document.getElementById("paragraph").innerHTML = "Your akan name is: " +  male[7];
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // document.getElementById("akanName").innerHTML = "Your akan name is: " ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
