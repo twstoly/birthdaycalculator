@@ -20,9 +20,9 @@ a:hover{
     
 }
 .background{
-    background: url(/images/jason-goodman-MUZFKa_mttU-unsplash.jpg) center;
+    background: url(./images/jason-goodman-MUZFKa_mttU-unsplash.jpg) center;
     background-size: cover;
-    min-height: 500px;
+    min-height: 700px;
     padding: 40px;
     text-align: center;
 }
@@ -85,17 +85,3 @@ a:hover{
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
