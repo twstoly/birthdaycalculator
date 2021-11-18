@@ -20,7 +20,7 @@ a:hover{
 }
 
 .background{
-    background: url(./images/jason-goodman-MUZFKa_mttU-unsplash.jpg) center;
+    background: url(images/jason-goodman-MUZFKa_mttU-unsplash.jpg) center;
     background-size: cover;
     min-height: 700px;
     padding: 40px;
